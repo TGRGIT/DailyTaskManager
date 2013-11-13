@@ -7,12 +7,29 @@
 //
 
 #include <stdio.h>
+#include <libc.h>
+#include <stdlib.h>
+
+void performDailyTasks();
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    system("clear");
+    while(1){
+        performDailyTasks();
+        sleep(1);
+        system("clear");
+    }
     return 0;
+}
+
+void performDailyTasks(){
+    printf("Eat\n");
+    sleep(1);
+    printf("Sleep\n");
+    sleep(1);
+    printf("Rave\n");
+    sleep(1);
+    printf("Repeat\n");
 }
 
